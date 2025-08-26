@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nakshatra — Astronomy & Space Society</title>
+  <meta name="description"
+    content="Nakshatra is the astronomy & space society. We host star-gazing nights, talks, rocket builds, and more!" />
+  <link rel="stylesheet" href="nakshaktra.css">
+  <link rel="icon" type="image/png" href="/photos/nakshaktra-icon.png" />
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <canvas id="starsCanvas" aria-hidden="true"></canvas>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Nakshatra home">
+        <img class="logo1" src="/photos/nakshaktra.png" alt="">
+        <span>NAKSHATRA</span>
+      </a>
+
+      <!-- Hamburger button -->
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation links -->
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Join Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="tag">✨ Student Astronomy & Space Society</div>
+        <h1>We turn <span style="color:var(--accent)">curiosity</span> into <span style="color:var(--accent-2)">cosmic
+            adventures</span>.</h1>
+        <p class="lede">Nakshatra is our college community for everyone who looks up and wonders. From star‑gazing
+          nights on the quad to hands‑on rocket builds, we explore the universe together—one clear sky at a time.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Join the Crew</a>
+          <a class="btn" href="#events">See What We Do</a>
+        </div>
+        <div class="divider"></div>
+        <p class="small muted">"Nakshatra" means <em>constellation</em>—a reminder that we shine brighter together.</p>
+      </div>
+      <div class="hero-card reveal" style="--d:0.1s">
+        <img width="600px" src="/photos/nakshaktra.png" alt="" srcset="">
+        <p class="small muted" style="margin:10px 6px 0">Nakshatra — Astronomy & Space Society</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+      <p class="kicker center">About Us</p>
+      <h2 class="center" style="font-family:Orbitron, sans-serif; margin:8px 0 18px">What is Nakshatra?</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>We make space feel close. Nakshatra is a student‑run society dedicated to astronomy, space technology, and
+            science communication. We host events that are equal parts <strong>fun</strong>, <strong>hands‑on</strong>,
+            and <strong>mind‑expanding</strong>.</p>
+          <p>Whether you’re here for astrophotography, black hole debates, or just the snacks at midnight nebula‑watch,
+            there’s a place for you.</p>
+        </div>
+        <div class="card">
+          <h3>How We Roll</h3>
+          <ul>
+            <li>Inclusive, beginner‑friendly, and curiosity‑powered.</li>
+            <li>Peer learning, mini‑workshops, and field sessions on actual skies.</li>
+            <li>Collabs with physics clubs, makerspaces, and local observatories.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events" class="reveal">
+      <p class="kicker center">Events & Activities</p>
+      <h2 class="center" style="font-family:Orbitron, sans-serif; margin:8px 0 24px">What we (love to) do</h2>
+      <div class="grid">
+        <div class="event">
+          <span class="pill">Star‑Gazing Nights</span>
+          <h4>Sky Sessions</h4>
+          <p>Observation camps on the terrace/ground with telescopes, constellations walk‑throughs, and meteor‑watch
+            parties.</p>
+        </div>
+        <div class="event">
+          <span class="pill">Talks & Panels</span>
+          <h4>Cosmic Conversations</h4>
+          <p>Guest lectures by professors, alumni in aerospace, and space‑startups. Ask all your “what if” questions.
+          </p>
+        </div>
+        <div class="event">
+          <span class="pill">Build Labs</span>
+          <h4>Rockets & Rovers</h4>
+          <p>Water‑rocket competitions, model rocketry basics, Arduino trackers, and CanSat‑style experiments.</p>
+        </div>
+        <div class="event">
+          <span class="pill">Astrophotography</span>
+          <h4>Capture the Night</h4>
+          <p>Phone‑through‑eyepiece hacks, stacking 101, and deep‑sky attempts when the skies are kind.</p>
+        </div>
+        <div class="event">
+          <span class="pill">Quizzes & Fests</span>
+          <h4>Space Quiz Bowl</h4>
+          <p>Trivia nights, constellation bingos, space meme contests, and an annual Astro Fest.</p>
+        </div>
+        <div class="event">
+          <span class="pill">Outreach</span>
+          <h4>Star for All</h4>
+          <p>Public sky‑watches and school demos to spark curiosity beyond campus.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="reveal">
+      <p class="kicker center">Gallery</p>
+      <h2 class="center" style="font-family:Orbitron, sans-serif; margin:8px 0 18px">Moments & Moodboard</h2>
+      <p class="center muted">Click any image to open it large.</p>
+      <div class="masonry" aria-live="polite">
+        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1200&auto=format&fit=crop"
+          alt="Milky Way over mountains" />
+        <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?q=80&w=1200&auto=format&fit=crop"
+          alt="Nebula close-up" />
+        <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?q=80&w=1600&auto=format&fit=crop"
+          alt="Star trail long exposure" />
+        <img src="https://images.unsplash.com/photo-1447433819943-74a20887a81e?q=80&w=1200&auto=format&fit=crop"
+          alt="Moon surface" />
+        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop"
+          alt="Aurora borealis" />
+        <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&w=1200&auto=format&fit=crop"
+          alt="Galaxy core" />
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+      <p class="kicker center">Join Us</p>
+      <h2 class="center" style="font-family:Orbitron, sans-serif; margin:8px 0 18px">Ready for liftoff?</h2>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Become a member</h3>
+          <p>We meet weekly during the semester. Fill the quick form, hop into the Discord, and say hi on the
+            #introductions channel!</p>
+          <ul>
+            <li><strong>Membership form:</strong> <span class="muted">Coming Soon</span></li>
+            <li><strong>Email:</strong> nakshatra@society.example</li>
+            <li><strong>Where:</strong> Physics Block Rooftop • Clear nights only ☁️→🔭</li>
+          </ul>
+          <div class="socials" aria-label="Social links">
+            <a class="chip" href="https://www.facebook.com/Nakshatra.DU/" aria-disabled="true">Facebook </a>
+            <a class="chip" href="https://www.instagram.com/nakshatra_nsut/" aria-disabled="true">Instagram </a>
+            <a class="chip" href="https://www.linkedin.com/company/nakshatra-nsut/" aria-disabled="true">Linkdln</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Ping us</h3>
+          <form id="contactForm" onsubmit="return false;">
+            <label class="sr-only" for="name">Name</label>
+            <input id="name" class="btn" style="width:100%; margin-bottom:10px" placeholder="Your name" />
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" class="btn" style="width:100%; margin-bottom:10px" placeholder="Email" />
+            <label class="sr-only" for="msg">Message</label>
+            <textarea id="msg" class="btn" style="width:100%; height:110px; resize:vertical"
+              placeholder="Tell us what you're curious about…"></textarea>
+            <button class="btn primary" style="width:100%; margin-top:10px" id="fakeSubmit">Send (demo)</button>
+            <p id="formNote" class="small muted" style="margin-top:8px">Demo only — no actual emails yet.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="center">
+      <p class="small">© <span id="year"></span> Nakshatra — Astronomy & Space Society. Built with stardust and
+        JavaScript.</p>
+    </section>
+  </footer>
+
+  <!-- Modal for gallery -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Image preview">
+    <img id="modalImg" alt="Large preview" />
+  </div>
+
+  <script src="nakshaktra.js">
+
+  </script>
+</body>
+
+</html>
